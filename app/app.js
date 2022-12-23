@@ -1,12 +1,12 @@
 "use strict";
 
 //모듈
-const express = require("express");
-const bodyParser = require("body-parser");
+const express = require("express");             //express 모듈 사용
+const bodyParser = require("body-parser");      //body-parser 모듈 사용
 const app = express();
 
 //라우팅
-const home = require("./src/routes/home");
+const home = require("./src/routes/home");      //라우팅 사용
 
 //앱 세팅
 app.set("views", "./src/views");
