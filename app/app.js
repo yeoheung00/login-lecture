@@ -4,12 +4,14 @@
 const express = require("express");             //express 모듈 사용
 const bodyParser = require("body-parser");      //body-parser 모듈 사용
 const dotenv = require("dotenv");
-dotenv.config();
 
 const app = express();
+dotenv.config();
 
 //라우팅
 const home = require("./src/routes/home");      //라우팅 사용
+
+const logger = require("./src/config/logger");
 
 //앱 세팅
 app.set("views", "./src/views");
